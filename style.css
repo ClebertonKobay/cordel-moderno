@@ -53,15 +53,19 @@ h1{
     font-size: 3.5vw;
 
 }
+
 .estrofecomimagem {
+    
     display: inline-block;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     padding: 0;
-    margin: 10vh;
+    margin: 5vh;
+    text-shadow: 2px 1px 1px black;
     
 }
 .imagem{
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.6);
     background-image: url(imagens/background001.jpg);
     background-position: center right;
     background-size: cover;
@@ -71,4 +75,25 @@ h1{
 
 #imagem2{
     background-image: url(imagens/background002.jpg);
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    font-size: 1.5em;
+    height: 10vh;
+}
+footer a{
+    padding: 3px;
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+}
+footer a::after{
+    content: "\1F517";
+}
+footer a:hover{
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.205);
 }
